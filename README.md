@@ -31,12 +31,14 @@ see `src/lib.rs` and `./README.tpl` for actual documentation source.
 ## CI/CD
 > Note: requires following [conventional commits].
 
-On Pull Request:
+On Pull Request -> main:
   - run `cargo make ci` (test && rustfmt --check && clippy)
-On main merge:
+
+On Pull Request merge -> main:
   - Uses [`standard-version`] (bump version & update CHANGELOG)
   - Pushes `chore(release): vX.X.X`
   - Pushes tag `vX.X.X`
+
 On tag push:
   - Publish new GitHub release
   - Publish new version to crates.io
