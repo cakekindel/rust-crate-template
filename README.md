@@ -1,5 +1,5 @@
-[![crates.io](https://img.shields.io/crates/v/slack-blocks.svg)](https://crates.io/crates/slack-blocks)
-[![docs.rs](https://docs.rs/slack-blocks/badge.svg)](https://docs.rs/slack-blocks/latest)
+[![crates.io](https://img.shields.io/crates/v/{{PACKAGE}}.svg)](https://crates.io/crates/{{PACKAGE}})
+[![docs.rs](https://docs.rs/{{PACKAGE}}/badge.svg)](https://docs.rs/{{PACKAGE}}/latest)
 ![Maintenance](https://img.shields.io/badge/maintenance-activly--developed-brightgreen.svg)
 
 # {{PACKAGE}}
@@ -7,6 +7,12 @@
 Orion's Rust crate template.
 
 This includes a CI/CD pipeline, README templating, and cargo-make scripts.
+
+## Setup
+|Type|Name|Value|How-To|
+|--|--|--|--|
+|Github Repo Secret|CARGO_TOKEN|Token issued for your user by crates.io|[How-To](https://doc.rust-lang.org/cargo/reference/publishing.html#before-your-first-publish)|
+|Github Repo Secret|GH_TOKEN|A GitHub PAT|[How-To](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)|
 
 ## cargo-make
 This crate uses [`cargo-make`] for script consistency, in Makefile.toml you'll find:
