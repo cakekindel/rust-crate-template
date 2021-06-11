@@ -42,6 +42,16 @@
 //! [`standard-version`]: https://www.npmjs.com/package/standard-version
 //! [conventional commits]: https://www.conventionalcommits.org/en/v1.0.0/
 
+#![deny(missing_docs,
+        missing_doc_code_examples)]
+
+#![cfg_attr(not(test),
+            forbid(missing_copy_implementations,
+                   missing_debug_implementations,
+                   unreachable_pub,
+                   unsafe_code,
+                   unused_crate_dependencies))]
+
 pub struct Bingus;
 
 pub fn foo() -> Bingus { Bingus }
